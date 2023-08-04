@@ -3,6 +3,7 @@ extends includes/layout.pug
 block content
   #post
     if top_img === false
+      img.post-cover-img(src=page.top_img || page.cover || theme.default_top_img, alt="cover", style=`width: 100%; border-radius: 10px; margin-top: -30px;`)
       include includes/header/post-info.pug
 
     article#article-container.post-content!=page.content
