@@ -1,6 +1,6 @@
 if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
   [data-theme='dark']
-    --global-bg: darken(#121212, 2)
+    --global-bg: darken(#1A1E27, 2)
     --font-color: alpha(#FFFFFF, .7)
     --hr-border: alpha(#FFFFFF, .4)
     --hr-before-color: alpha(#FFFFFF, .7)
@@ -14,7 +14,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     --tab-botton-color: alpha(#FFFFFF, .7)
     --tab-button-hover-bg: lighten(#121212, 15)
     --tab-button-active-bg: #121212
-    --card-bg: #121212
+    --card-bg: #232530
     --sidebar-bg: #121212
     --btn-hover-color: lighten(#121212, 40)
     --btn-color: alpha(#FFFFFF, .7)
@@ -140,3 +140,6 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     #card-toc
       +maxWidth900()
         background: lighten(#121212, 5)
+    
+    .fab.fa-github
+      color: alpha(#FFFFFF, .7) !important
