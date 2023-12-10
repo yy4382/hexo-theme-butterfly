@@ -6,9 +6,9 @@
     @extend .cardHover
     display: flex
     flex-direction: row
-    align-items: center
+        align-items: center
     overflow: hidden
-    height: 16.8em
+    height: 12em
 
     +maxWidth768()
       flex-direction: column
@@ -23,8 +23,8 @@
       height: auto !important
 
     .post_cover
-      overflow: hidden
-      width: 42%
+      // overflow: hidden
+      // width: 42%
       height: 100%
 
       +maxWidth768()
@@ -36,13 +36,14 @@
 
       &.right
         order: 1
+        margin-left: auto
 
         +maxWidth768()
           order: 0
 
     & >.recent-post-info
       padding: 0 40px
-      width: 58%
+      // width: 58%
 
       +maxWidth768()
         padding: 20px 20px 30px
