@@ -8,7 +8,7 @@
     flex-direction: row
     align-items: center
     overflow: hidden
-    height: 16.8em
+    height: 12em
 
     +maxWidth768()
       flex-direction: column
@@ -26,6 +26,10 @@
       overflow: hidden
       width: 42%
       height: 100%
+      display: flex;
+      align-content: center;
+      padding: 5px 20px;
+      justify-content: center;
 
       +maxWidth768()
         width: 100%
@@ -36,6 +40,7 @@
 
       &.right
         order: 1
+        margin-left: auto
 
         +maxWidth768()
           order: 0
@@ -113,3 +118,5 @@
       & > .content
         @extend .limit-more-line
         -webkit-line-clamp: 2
+        line-height: normal;
+        color: #858585;
